@@ -19,7 +19,7 @@ server.on('request', (request: IncomingMessage, response: ServerResponse) => {
 
   if (method!=='GET'){
     response.statusCode = 200;
-    response.end(`can not    GET`)
+    response.end(`can not     GET`)
   }
 
   fs.readFile(p.resolve(publicDir, filename), (error, data) => {
